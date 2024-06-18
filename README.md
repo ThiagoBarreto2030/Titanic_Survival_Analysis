@@ -6,7 +6,7 @@ A comprehensive analysis of the Titanic disaster, focusing on identifying key fa
 
 ## Summary
 - [Introduction](#introduction)
-- [Data Preparation](#datapreparation)
+- [Data Preparation](#data_preparation)
 -
 
 ## Introduction:
@@ -52,13 +52,28 @@ A comprehensive analysis of the Titanic disaster, focusing on identifying key fa
     
   **Websites to scrape data_needed:**
   
-    - [Kaggle Titanic Dataset](https://www.kaggle.com/datasets/heptapod/titanic)
+    - [Kaggle Titanic dataset](https://www.kaggle.com/competitions/titanic/data)
 
     - Historical archives websites for supplementary passenger records, such as [Encyclopedia Titanica](https://www.encyclopedia-titanica.org/)
 
-## DataPreparation
+## Data_Preparation
 #### 1. Cleaning and Processing Data
+
+The main dataset is the [train.csv](Support/train.csv) file to be used to build your machine learning models.
+
+```python_test_csv_headers
+import pandas as pd
+
+# Load the CSV file
+file_path = 'Support/train.csv'
+data = pd.read_csv(file_path)
+
+# Display the headers of the table
+print(data.columns)
+```
 
 #### 2. Handling Missing Values and Outliers
 
+
 #### 3. Creating derived variables (e.g., family size, fare per person)
+
